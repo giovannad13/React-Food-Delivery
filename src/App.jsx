@@ -1,77 +1,77 @@
-import React, { useState } from 'react';
-import { Route, Routes, HashRouter } from 'react-router-dom';
+// import React, { useState } from 'react';
+// import { Route, Routes, HashRouter } from 'react-router-dom';
 
-import Footer from './components/Footer/Footer';
-import LoginPopup from './components/LoginPopup/LoginPopup';
-import Navbar from './components/Navbar/Navbar';
+// import Footer from './components/Footer/Footer';
+// import LoginPopup from './components/LoginPopup/LoginPopup';
+// import Navbar from './components/Navbar/Navbar';
 
-import Cart from './pages/Cart/Cart';
-import Home from './pages/Home/Home';
-import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
+// import Cart from './pages/Cart/Cart';
+// import Home from './pages/Home/Home';
+// import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 
-function App() {
-  const [showLogin, setShowLogin] = useState(false);
-
-  return (
-    <HashRouter>
-      <Navbar setShowLogin={setShowLogin} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/order" element={<PlaceOrder />} />
-        {/* Add more routes as needed */}
-      </Routes>
-      <Footer />
-      {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
-    </HashRouter>
-  );
-}
-
-export default App;
-
-
-
-
-
-
-
-// import React, { useState } from 'react'
-// import { Route, Routes, HashRouter } from 'react-router-dom'
-// import Footer from './components/Footer/Footer'
-// import LoginPopup from './components/LoginPopup/LoginPopup'
-// import Navbar from './components/Navbar/Navbar'
-// import Cart from './pages/Cart/Cart'
-// import Home from './pages/Home/Home'
-// import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
-
-// const App = () => {
-
-//     const [showLogin,setShowLogin] = useState(false)
-
+// function App() {
+//   const [showLogin, setShowLogin] = useState(false);
 
 //   return (
-//     <>
-
-//       {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
-
-
-//       <div className='app'>
-
-//         <Navbar setShowLogin={setShowLogin} />
-
-//         <Routes>
-//           <Route path='/' element={<Home />} />
-//           <Route path='/cart' element={<Cart />} />
-//           <Route path='/order' element={<PlaceOrder />} />
-//         </Routes>
-
-//       </div>
+//     <HashRouter>
+//       <Navbar setShowLogin={setShowLogin} />
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/cart" element={<Cart />} />
+//         <Route path="/order" element={<PlaceOrder />} />
+//         {/* Add more routes as needed */}
+//       </Routes>
 //       <Footer />
-
-//     </>
-   
-//   )
+//       {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
+//     </HashRouter>
+//   );
 // }
 
-// export default App
+// export default App;
+
+
+
+
+
+
+
+import React, { useState } from 'react'
+import { Route, Routes, HashRouter } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
+import LoginPopup from './components/LoginPopup/LoginPopup'
+import Navbar from './components/Navbar/Navbar'
+import Cart from './pages/Cart/Cart'
+import Home from './pages/Home/Home'
+import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
+
+const App = () => {
+
+    const [showLogin,setShowLogin] = useState(false)
+
+
+  return (
+    <>
+
+      {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
+
+
+      <div className='app'>
+
+        <Navbar setShowLogin={setShowLogin} />
+
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/order' element={<PlaceOrder />} />
+        </Routes>
+
+      </div>
+      <Footer />
+
+    </>
+   
+  )
+}
+
+export default App
 
