@@ -1,4 +1,4 @@
-# React Food Delivery App 🍕🚴‍♂️
+# React Food Delivery App 🍕🍕
 
 This is a simple food delivery frontend app I built using React and Vite. It’s designed to look and feel like a real food ordering website, with basic features like browsing food items, adding them to your cart, and placing an order.
 
