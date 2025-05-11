@@ -32,12 +32,13 @@ It’s still a work in progress — the backend will come later — but I wanted
 
 To run the project locally:
 
-```bash
+``bash
  git clone https://github.com/giovannad13/React-Food-Delivery.git
 cd React-Food-Delivery
 npm install
 npm run dev
 
+*click on "Home" from nav to view*
 
 React-Food-Delivery/
 ├── public/
