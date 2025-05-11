@@ -21,9 +21,10 @@ It’s still a work in progress — the backend will come later — but I wanted
 ## Tech Stack
 
 - React
+- ES7
 - Vite
 - React Router
-- CSS Modules
+- CSS
 - GitHub Pages (for deployment)
 
 ---
